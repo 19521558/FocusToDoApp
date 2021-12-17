@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForcusToDo.TodayEventPage"
+             BackgroundColor="#F0F0F0"
+             Title="Today"
+             NavigationPage.IconColor="#757575"
+             >
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="5,-40,5,0" Padding="0" HeightRequest="100" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Orientation="Vertical" HorizontalOptions="End" Margin="0,0,0,0">
+                    <Label Text="2" TextColor="HotPink" FontSize="22" HorizontalOptions="Center"/>
+                    <Label Text="Tasks to be Completed" TextColor="DimGray" FontSize="14"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="0,0,40,0">
+                    <Label Text="2" TextColor="HotPink" FontSize="22" HorizontalOptions="Center"/>
+                    <Label Text="Completed Tasks" TextColor="DimGray" FontSize="14"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+        <Frame Grid.Row="2" HasShadow="True" CornerRadius="10" Padding="0"  Margin="5,5,5,0" HeightRequest="60" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="10">
+                    <Image Source="plusicon.png" HeightRequest="15" HorizontalOptions="Start"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Entry Placeholder="Add a task..." 
+                               PlaceholderColor="#757575"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+        <Label Grid.Row="3" Text="Tasks" TextColor="#757575" Margin="25,25,5,0"/>
+
+        <Grid Grid.Row="4" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ListView x:Name="TodayTaskList" ItemsSource="{Binding TodayTasks}" SeparatorVisibility="None"
+                  Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="White" Padding="5" HasShadow="False">
+                                <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox />
+                                    <Label Grid.Column="1" Text="{Binding Task}" TextColor="Black" FontSize="14" VerticalOptions="Center" Margin="10,0"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>
