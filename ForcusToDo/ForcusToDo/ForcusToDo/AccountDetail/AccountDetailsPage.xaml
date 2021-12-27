@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForcusToDo.AccountDetailsPage"
+             BackgroundColor="#F0F0F0"
+             Title="Account Details"
+             NavigationPage.IconColor="#757575">
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="1" HasShadow="True" Padding="0" HeightRequest="50" VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Label Text="Avatar" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <ImageButton Source="arrowicon.png"  BackgroundColor="White" HeightRequest="20" Margin="274,0,0,0"/>
+            </StackLayout>
+        </Frame>
+        
+        <Frame Grid.Row="2" HasShadow="True" Padding="0" HeightRequest="50" VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <StackLayout Orientation="Vertical" Margin="0,0,0,0"  VerticalOptions="Center">
+                    <Label Text="Username" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <ImageButton x:Name="ChangeUsername" Clicked="ChangeUsername_Clicked"  Source="arrowicon.png"  BackgroundColor="White" HeightRequest="20" Margin="251,0,0,0"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="3" HasShadow="True" Padding="0" HeightRequest="50" VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Label Text="Account" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <ImageButton x:Name="ChangeAccount" Clicked="ChangeAccount_Clicked" Source="arrowicon.png"  BackgroundColor="White" HeightRequest="20" Margin="262,0,0,0"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="4" HasShadow="True" Padding="0" HeightRequest="50" VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Label Text="Change Password" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <ImageButton x:Name="ChangePw" Clicked="ChangePw_Clicked" Source="arrowicon.png"  BackgroundColor="White" HeightRequest="20" Margin="202,0,0,0"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="5" Grid.Column="0" HasShadow="True" Padding="0" Margin="0,20,0,0" HeightRequest="50" VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Button x:Name="SignOut" Clicked="SignOut_Clicked" Text="Sign out" BackgroundColor="White" TextColor="HotPink" FontSize="14" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForcusToDo.SignInPage"
+              NavigationPage.HasNavigationBar = "false"
+             BackgroundColor="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.ColumnSpan="2" Grid.Row="1" 
+               Source="logo.jpg" HeightRequest="100" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
+        
+        <Image Grid.Row="2" Source="emailicon.png"/>
+        <Entry Grid.Row="2" Grid.Column="1" 
+               Placeholder="Email address" PlaceholderColor="LightGray" 
+               TextColor="Black"/>
+        
+        <Image Grid.Row="3" Source="lockicon.png" WidthRequest="5"/>
+        <Entry Grid.Row="3" Grid.Column="1" 
+               IsPassword="True" Placeholder="Password" PlaceholderColor="LightGray" 
+               TextColor="Black"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="4" 
+                Text="SIGN IN" FontSize="Medium" TextColor="White" 
+                BackgroundColor="#B3D0D9" Margin="30,30,30,0" CornerRadius="30"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="5" 
+                x:Name="ResetPasswordPage" Clicked="ResetPasswordPage_Clicked"
+                Text="Forget Password?" TextColor="#757575" FontSize="Micro" 
+                BackgroundColor="White"/>
+
+        <Label Grid.ColumnSpan="2" Grid.Row="6" 
+               Text="--------------------------------------------or------------------------------------------" TextColor="LightGray"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="7" 
+                x:Name="SignUpPage" Clicked="SignUpPage_Clicked"
+                Text="SIGN UP" TextColor="White" FontSize="Medium" BackgroundColor="#B3D0D9" 
+                Margin="30,0,30,0" CornerRadius="30"/>
+    </Grid>
+</ContentPage>

@@ -2,6 +2,33 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "CustomCalendarControl/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.MvvmHelpers": "1.6.2",
+          "Rg.Plugins.Popup": "2.0.0.13",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -26,7 +53,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -43,7 +79,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2291": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -170,9 +206,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CustomCalendarControl": "1.0.5",
           "Rg.Plugins.Popup": "2.0.0.14",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "bin/placeholder/ForcusToDo.dll": {}
@@ -183,6 +220,33 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "CustomCalendarControl/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.MvvmHelpers": "1.6.2",
+          "Rg.Plugins.Popup": "2.0.0.13",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -207,7 +271,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -224,7 +297,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2291": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -351,9 +424,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CustomCalendarControl": "1.0.5",
           "Rg.Plugins.Popup": "2.0.0.14",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "bin/placeholder/ForcusToDo.dll": {}
@@ -364,6 +438,33 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "CustomCalendarControl/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.MvvmHelpers": "1.6.2",
+          "Rg.Plugins.Popup": "2.0.0.13",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -388,7 +489,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -405,7 +515,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2291": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -532,9 +642,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CustomCalendarControl": "1.0.5",
           "Rg.Plugins.Popup": "2.0.0.14",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "bin/placeholder/ForcusToDo.dll": {}
@@ -545,6 +656,33 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "CustomCalendarControl/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Refractored.MvvmHelpers": "1.6.2",
+          "Rg.Plugins.Popup": "2.0.0.13",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CustomCalendarControl.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -569,7 +707,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -586,7 +733,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2291": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -713,9 +860,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CustomCalendarControl": "1.0.5",
           "Rg.Plugins.Popup": "2.0.0.14",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "bin/placeholder/ForcusToDo.dll": {}
@@ -727,6 +875,40 @@
     }
   },
   "libraries": {
+    "CustomCalendarControl/1.0.5": {
+      "sha512": "3k2uQ0qZ2q/39nmM5vm6Qno6otbQSMO6W39S4ZDBfuapKRhOTwLgXURAt0nexmq6GxdjmWs9M6fPAxqxM6BpvQ==",
+      "type": "package",
+      "path": "customcalendarcontrol/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "285670_calendar_icon.png",
+        "customcalendarcontrol.1.0.5.nupkg.sha512",
+        "customcalendarcontrol.nuspec",
+        "lib/netstandard2.0/CustomCalendarControl.dll"
+      ]
+    },
+    "Refractored.MvvmHelpers/1.6.2": {
+      "sha512": "pXiyT0ad3QI7IzZSSjVNliyhyyAe7lmNPdfAEgSrtjhF9twrYoKbBlTd58IJc67Fw8QmHEur8F9eBA4rj+BZAg==",
+      "type": "package",
+      "path": "refractored.mvvmhelpers/1.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/MvvmHelpers.dll",
+        "lib/net461/MvvmHelpers.pdb",
+        "lib/net461/MvvmHelpers.xml",
+        "lib/netstandard1.0/MvvmHelpers.dll",
+        "lib/netstandard1.0/MvvmHelpers.pdb",
+        "lib/netstandard1.0/MvvmHelpers.xml",
+        "lib/netstandard2.0/MvvmHelpers.dll",
+        "lib/netstandard2.0/MvvmHelpers.pdb",
+        "lib/netstandard2.0/MvvmHelpers.xml",
+        "refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+        "refractored.mvvmhelpers.nuspec"
+      ]
+    },
     "Rg.Plugins.Popup/2.0.0.14": {
       "sha512": "TGUbBSYtKuoqy/kRMw4apwoUY43DATNPUk7t0FJUJjUYnBAJTbRIr84ZvM8xVRltoIctpm5FfCnuliw6dUDywA==",
       "type": "package",
@@ -818,10 +1000,54 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.6.1": {
-      "sha512": "gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.1",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Xamarin.Essentials/1.7.0": {
+      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+      "type": "package",
+      "path": "xamarin.essentials/1.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -830,15 +1056,6 @@
         "lib/monoandroid10.0/Xamarin.Essentials.dll",
         "lib/monoandroid10.0/Xamarin.Essentials.pdb",
         "lib/monoandroid10.0/Xamarin.Essentials.xml",
-        "lib/monoandroid80/Xamarin.Essentials.dll",
-        "lib/monoandroid80/Xamarin.Essentials.pdb",
-        "lib/monoandroid80/Xamarin.Essentials.xml",
-        "lib/monoandroid81/Xamarin.Essentials.dll",
-        "lib/monoandroid81/Xamarin.Essentials.pdb",
-        "lib/monoandroid81/Xamarin.Essentials.xml",
-        "lib/monoandroid90/Xamarin.Essentials.dll",
-        "lib/monoandroid90/Xamarin.Essentials.pdb",
-        "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
         "lib/netstandard1.0/Xamarin.Essentials.pdb",
         "lib/netstandard1.0/Xamarin.Essentials.xml",
@@ -865,14 +1082,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.1.nupkg.sha512",
+        "xamarin.essentials.1.7.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2012": {
-      "sha512": "Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
+    "Xamarin.Forms/5.0.0.2291": {
+      "sha512": "No5HI+c05RBDT5Oe7ZSRaO+cQVeZNhrYdchvczNeZdWQiwrux8RJcVg8chI4DZ2xODeBjF0juIF9u1A5ysZ+uQ==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2012",
+      "path": "xamarin.forms/5.0.0.2291",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1081,7 +1298,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2012.nupkg.sha512",
+        "xamarin.forms.5.0.0.2291.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1093,10 +1310,11 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "CustomCalendarControl >= 1.0.5",
       "ForcusToDo >= 1.0.0",
       "Rg.Plugins.Popup >= 2.0.0.14",
-      "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Essentials >= 1.7.0",
+      "Xamarin.Forms >= 5.0.0.2291"
     ]
   },
   "packageFolders": {
@@ -1106,11 +1324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\ForcusToDo.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\ForcusToDo.iOS.csproj",
       "projectName": "ForcusToDo.iOS",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\ForcusToDo.iOS.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\ForcusToDo.iOS.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1131,8 +1349,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj"
+            "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj"
             }
           }
         }
@@ -1141,17 +1359,21 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "CustomCalendarControl": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
           "Rg.Plugins.Popup": {
             "target": "Package",
             "version": "[2.0.0.14, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.6.1, )"
+            "version": "[1.7.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2012, )"
+            "version": "[5.0.0.2291, )"
           }
         }
       }

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForcusToDo.MainPage.AddProjectPage">
+
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="2" HasShadow="True" CornerRadius="10" Padding="0"  Margin="5,5,5,0" HeightRequest="60" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="10">
+                    <Image Source="plusicon.png" HeightRequest="15" HorizontalOptions="Start"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Entry Placeholder="Add a task..." 
+                               PlaceholderColor="#757575"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+
+    </Grid>
+</ContentPage>

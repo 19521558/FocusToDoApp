@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj",
         "projectName": "ForcusToDo.Android",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\ForcusToDo.Android.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj"
+              "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj"
               }
             }
           }
@@ -42,30 +42,42 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "CustomCalendarControl": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Karamunting.Android.Akexorcist.SnapTimePicker": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[2.0.0.14, )"
             },
+            "Xamarin.AndroidX.Browser": {
+              "target": "Package",
+              "version": "[1.3.0.8, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2291, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj",
         "projectName": "ForcusToDo",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\ForcusToDo.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ForcusToDo\\ForcusToDo\\ForcusToDo\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\FocusToDoApp\\ForcusToDo\\ForcusToDo\\ForcusToDo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -98,6 +110,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "CustomCalendarControl": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -110,11 +126,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2291, )"
             }
           },
           "imports": [

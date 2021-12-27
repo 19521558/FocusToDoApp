@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:ForcusToDo.ViewModel"
+             x:Class="ForcusToDo.ThemeSettingPage"
+             BackgroundColor="#F0F0f0"
+             Title="Theme">
+    
+    <ContentPage.BindingContext>
+        <vm:ViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="130, *">
+        <BoxView Grid.RowSpan="2">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Color="#161616" Offset="0"/>
+                        <GradientStop Color="#30343F" Offset="1"/>
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <CarouselView Grid.Row="1" ItemsSource="{Binding MenuList}" PeekAreaInsets="10">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid HeightRequest="520" WidthRequest="212" HorizontalOptions="Center">
+                        <Grid RowDefinitions="*,*,*" WidthRequest="175" HorizontalOptions="Center" Margin="0,50">
+                            <StackLayout Grid.Row="2" Spacing="20" Padding="20" VerticalOptions="End">
+                                <Button x:Name="AddTheme" Clicked="AddTheme_Clicked" Text="ADD" TextColor="Black" BackgroundColor="White" WidthRequest="100" HeightRequest="40" 
+                                        CornerRadius="20" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Grid>
+                        <Grid WidthRequest="450" VerticalOptions="Start" HorizontalOptions="Center">
+                            <Image x:Name="MenuImg" Source="{Binding Image}" HeightRequest="350" WidthRequest="350" HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </Grid>
+</ContentPage>
