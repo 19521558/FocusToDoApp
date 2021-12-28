@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ForcusToDo.MainPage
+namespace ForcusToDo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddProjectPage : ContentPage

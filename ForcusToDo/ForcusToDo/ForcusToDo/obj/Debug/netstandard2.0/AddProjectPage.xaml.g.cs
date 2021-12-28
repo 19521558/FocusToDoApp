@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ForcusToDo.AddProjectPage.xaml", "AddProjectPage.xaml", typeof(global::ForcusToDo.MainPage.AddProjectPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ForcusToDo.AddProjectPage.xaml", "AddProjectPage.xaml", typeof(global::ForcusToDo.AddProjectPage))]
 
-namespace ForcusToDo.MainPage {
+namespace ForcusToDo {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AddProjectPage.xaml")]

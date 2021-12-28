@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ForcusToDo.FocusPage"
+             BackgroundColor="#F0F0F0"
+             NavigationPage.HasNavigationBar = "false">
+
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <CollectionView x:Name="eventList" ItemsLayout="VerticalList" ItemsSource="{Binding}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <ContentView>
+                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="arrowicon.jpg" HeightRequest="20" WidthRequest="10" BackgroundColor="White" />
+                            <Image Source="wall2.jpg" Aspect="AspectFit"/>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Spacing="15">
+                                <StackLayout>
+                                    <Label Text="{Binding Hours}" FontSize="40" FontAttributes="Bold" TextColor="White" HorizontalOptions="End"/>
+                                    <Label Text="HOURS" FontSize="10" TextColor="White" Opacity="0.5" HorizontalOptions="End" Margin="0,-5,0,0"/>
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Minutes}" FontSize="40" FontAttributes="Bold" TextColor="White" HorizontalOptions="End"/>
+                                    <Label Text="MINUTES" FontSize="10" TextColor="White" Opacity="0.5" HorizontalOptions="End" Margin="0,-5,0,0"/>
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Seconds}" FontSize="40" FontAttributes="Bold" TextColor="White" HorizontalOptions="End"/>
+                                    <Label Text="SECONDS" FontSize="10" TextColor="White" Opacity="0.5" HorizontalOptions="End" Margin="0,-5,0,0"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <Button x:Name="StopWatch" Clicked="StopWatch_Clicked"  Grid.Row="1" Text="PAUSE" TextColor="White" BackgroundColor="#30343F" 
+                                    HeightRequest="40" WidthRequest="20" CornerRadius="20" Margin="70,30,70,0"/>
+
+                            <Button x:Name="Reset" Clicked="Reset_Clicked"  Grid.Row="2" Text="CONTINUE" TextColor="White" BackgroundColor="#30343F" 
+                                    HeightRequest="40" WidthRequest="20" CornerRadius="20" Margin="70,30,70,0"/>
+                        </Grid>
+                    </ContentView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

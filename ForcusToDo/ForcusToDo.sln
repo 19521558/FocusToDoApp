@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForcusToDo.Android", "Forcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForcusToDo.iOS", "ForcusToDo\ForcusToDo.iOS\ForcusToDo.iOS.csproj", "{01504CA6-D604-4081-AB2E-BA016DEB5976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForcusToDo", "ForcusToDo\ForcusToDo\ForcusToDo.csproj", "{2B3AF72D-AA9F-4964-8C89-53C03DFB22C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForcusToDo", "ForcusToDo\ForcusToDo\ForcusToDo.csproj", "{2B3AF72D-AA9F-4964-8C89-53C03DFB22C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

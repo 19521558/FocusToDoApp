@@ -45,7 +45,7 @@
     <EmbeddedResource Update="AccountDetail\ChangeUserPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MainPage\FocusPage.xaml">
+    <EmbeddedResource Update="FocusPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Setting\PromodoroLengthPage.xaml">
@@ -63,10 +63,10 @@
     <EmbeddedResource Update="AccountDetail\SignUpPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MainPage\ThemeSettingPage.xaml">
+    <EmbeddedResource Update="ThemeSettingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MainPage\TodayEventPage.xaml">
+    <EmbeddedResource Update="TodayEventPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Setting\UserPage.xaml">
@@ -78,5 +78,9 @@
     <EmbeddedResource Update="Setting\WorkAlarmPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Main\" />
   </ItemGroup>
 </Project>

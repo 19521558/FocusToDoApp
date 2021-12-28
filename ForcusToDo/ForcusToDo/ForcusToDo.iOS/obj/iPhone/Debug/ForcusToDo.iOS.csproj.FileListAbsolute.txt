@@ -1,5 +1,8 @@
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\ForcusToDo.iOS.exe
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\ForcusToDo.iOS.pdb
+C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\CustomCalendarControl.dll
+C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\MvvmHelpers.dll
+C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\MvvmHelpers.pdb
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.dll
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.pdb
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
@@ -63,6 +66,3 @@ C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iO
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\obj\iPhone\Debug\ForcusToDo.iOS.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\obj\iPhone\Debug\ForcusToDo.iOS.exe
 C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\obj\iPhone\Debug\ForcusToDo.iOS.pdb
-C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\CustomCalendarControl.dll
-C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\MvvmHelpers.dll
-C:\Users\Admin\Documents\GitHub\FocusToDoApp\ForcusToDo\ForcusToDo\ForcusToDo.iOS\bin\iPhone\Debug\MvvmHelpers.pdb
