@@ -13,6 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="5,-40,5,0" Padding="0" HeightRequest="100" VerticalOptions="Start">
@@ -34,17 +35,29 @@
             </Grid>
         </Frame>
 
-        <Frame Grid.Row="2" HasShadow="True" CornerRadius="10" Padding="0"  Margin="5,5,5,0" HeightRequest="60" VerticalOptions="Start">
+
+        <Label Grid.Row="2" Text="Add Tasks" TextColor="#757575" Margin="25,25,5,0"/>
+
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="10" Padding="0"  Margin="5,5,5,0" HeightRequest="60" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
+                
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="10">
                     <Image Source="plusicon.png" HeightRequest="15" HorizontalOptions="Start"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                        <Entry Placeholder="Add a task..." 
+                        <Entry Placeholder="Add name task..." 
+                               PlaceholderColor="#757575"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Start" Margin="10">
+                    <Image Source="plusicon.png" HeightRequest="15" HorizontalOptions="Start"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Entry Placeholder="Add name task..." 
                                PlaceholderColor="#757575"
                                TextColor="Black"/>
                     </StackLayout>
@@ -52,9 +65,9 @@
             </Grid>
         </Frame>
 
-        <Label Grid.Row="3" Text="Tasks" TextColor="#757575" Margin="25,25,5,0"/>
+        <Label Grid.Row="4" Text="Tasks" TextColor="#757575" Margin="25,25,5,0"/>
 
-        <Grid Grid.Row="4" VerticalOptions="FillAndExpand">
+        <Grid Grid.Row="5" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>

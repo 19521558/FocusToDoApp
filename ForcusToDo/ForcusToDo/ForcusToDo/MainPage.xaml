@@ -12,7 +12,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            
         </Grid.RowDefinitions>
         <Image Source="wall3.jpg" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,20">
@@ -76,7 +77,7 @@
             </StackLayout>
         </Frame>
 
-        <Frame Grid.Row="4" HasShadow="True" CornerRadius="10" Margin="20,-7,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
+        <Frame Grid.Row="4" HasShadow="True" CornerRadius="10" Margin="20,0,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
             <StackLayout Orientation="Horizontal" Margin="10">
                 <ImageButton Source="sunriseicon.png"  BackgroundColor="White" HeightRequest="25"/>
                 <StackLayout Orientation="Vertical" Margin="0,0,0,0" VerticalOptions="Center">
@@ -86,7 +87,7 @@
             </StackLayout>
         </Frame>
 
-        <Frame Grid.Row="5" HasShadow="True" CornerRadius="10" Margin="20,-23,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
+        <Frame Grid.Row="5" HasShadow="True" CornerRadius="10" Margin="20,-0,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
             <StackLayout Orientation="Horizontal" Margin="10">
                 <ImageButton Source="eventicon.png"  BackgroundColor="White" HeightRequest="25"/>
                 <StackLayout Orientation="Vertical" Margin="0,0,0,0" VerticalOptions="Center">
@@ -96,7 +97,7 @@
             </StackLayout>
         </Frame>
 
-        <Frame Grid.Row="6" HasShadow="True" CornerRadius="10" Margin="20,-39,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
+        <Frame Grid.Row="6" HasShadow="True" CornerRadius="10" Margin="20,0,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
             <StackLayout Orientation="Horizontal" Margin="10">
                 <ImageButton Source="checkedicon.png"  BackgroundColor="White" HeightRequest="25"/>
                 <StackLayout Orientation="Vertical" Margin="0,0,0,0" VerticalOptions="Center">
@@ -106,7 +107,7 @@
             </StackLayout>
         </Frame>
 
-        <Frame Grid.Row="7" HasShadow="True" CornerRadius="10" Margin="20,-55,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
+        <Frame Grid.Row="7" HasShadow="True" CornerRadius="10" Margin="20,0,20,0" Padding="0" HeightRequest="50" VerticalOptions="Start">
             <StackLayout Orientation="Horizontal" Margin="10">
                 <ImageButton Source="plusgreenicon.png"  BackgroundColor="White" HeightRequest="25"/>
                 <StackLayout Orientation="Vertical" Margin="0,0,0,0" VerticalOptions="Center">
@@ -115,5 +116,19 @@
                 <ImageButton x:Name="AddProject" Clicked="AddProject_Clicked" Source="arrowicon.png"  BackgroundColor="White" HeightRequest="20" Margin="169,0,0,0"/>
             </StackLayout>
         </Frame>
+
+
+        <ListView Grid.Row="8" x:Name="lstProject">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Margin="10">
+                        <ImageButton Source="plusgreenicon.png"  BackgroundColor="White" HeightRequest="25"/>
+                        <StackLayout Orientation="Vertical" Margin="0,0,0,0" VerticalOptions="Center">
+                            <Label Text="Add Project" TextColor="Black" FontSize="14"/>
+                        </StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </ContentPage>

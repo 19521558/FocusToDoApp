@@ -3,11 +3,9 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ForcusToDo.Android.dll" comes first in this list. */
 		"ForcusToDo.Android.dll",
-		"Akexorcist.SnapTimePicker.dll",
 		"CustomCalendarControl.dll",
 		"ForcusToDo.dll",
 		"FormsViewGroup.dll",
-		"KotlinX.Android.Extensions.Runtime.dll",
 		"MvvmHelpers.dll",
 		"Rg.Plugins.Popup.dll",
 		"Xamarin.AndroidX.Activity.dll",
@@ -37,12 +35,9 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.Legacy.Support.Core.Utils.dll",
 		"Xamarin.AndroidX.Legacy.Support.V4.dll",
 		"Xamarin.AndroidX.Lifecycle.Common.dll",
-		"Xamarin.AndroidX.Lifecycle.Extensions.dll",
 		"Xamarin.AndroidX.Lifecycle.LiveData.Core.dll",
 		"Xamarin.AndroidX.Lifecycle.LiveData.dll",
-		"Xamarin.AndroidX.Lifecycle.Process.dll",
 		"Xamarin.AndroidX.Lifecycle.Runtime.dll",
-		"Xamarin.AndroidX.Lifecycle.Service.dll",
 		"Xamarin.AndroidX.Lifecycle.ViewModel.dll",
 		"Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll",
 		"Xamarin.AndroidX.Loader.dll",
@@ -72,10 +67,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
-		"Xamarin.Jetbrains.Annotations.dll",
-		"Xamarin.Kotlin.StdLib.Common.dll",
-		"Xamarin.Kotlin.StdLib.dll",
-		"Xamarin.Kotlin.StdLib.Jdk7.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

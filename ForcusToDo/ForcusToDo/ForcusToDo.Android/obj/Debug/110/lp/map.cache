@@ -1,6 +1,4 @@
-Akexorcist.SnapTimePicker.dll
 FormsViewGroup.dll
-KotlinX.Android.Extensions.Runtime.dll
 Rg.Plugins.Popup.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
@@ -29,12 +27,9 @@ Xamarin.AndroidX.Legacy.Support.Core.UI.dll
 Xamarin.AndroidX.Legacy.Support.Core.Utils.dll
 Xamarin.AndroidX.Legacy.Support.V4.dll
 Xamarin.AndroidX.Lifecycle.Common.dll
-Xamarin.AndroidX.Lifecycle.Extensions.dll
 Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
 Xamarin.AndroidX.Lifecycle.LiveData.dll
-Xamarin.AndroidX.Lifecycle.Process.dll
 Xamarin.AndroidX.Lifecycle.Runtime.dll
-Xamarin.AndroidX.Lifecycle.Service.dll
 Xamarin.AndroidX.Lifecycle.ViewModel.dll
 Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll
 Xamarin.AndroidX.Loader.dll
@@ -62,9 +57,6 @@ Xamarin.Forms.Platform.Android.dll
 Xamarin.Forms.Platform.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.Guava.ListenableFuture.dll
-Xamarin.Jetbrains.Annotations.dll
-Xamarin.Kotlin.StdLib.dll
-Xamarin.Kotlin.StdLib.Jdk7.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
@@ -111,6 +103,3 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-androidx.lifecycle.lifecycle-service.aar
-androidx.lifecycle.lifecycle-process.aar
-androidx.lifecycle.lifecycle-extensions.aar

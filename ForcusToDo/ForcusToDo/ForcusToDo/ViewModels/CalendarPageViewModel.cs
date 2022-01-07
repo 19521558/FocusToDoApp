@@ -370,7 +370,7 @@ namespace ForcusToDo.ViewModels
                             newDate = new DateTime(year, (int)SelectedDate?.Month, (int)SelectedDate?.Day);
 
                         }
-                        catch (ArgumentOutOfRangeException ex)
+                        catch (ArgumentOutOfRangeException )
                         {
                             newDate = new DateTime(year, (int)SelectedDate?.Month, (int)SelectedDate?.Day - 1);
                         }

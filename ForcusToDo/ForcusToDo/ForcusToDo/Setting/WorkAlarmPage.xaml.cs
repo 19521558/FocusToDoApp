@@ -20,6 +20,7 @@ namespace ForcusToDo
             InitializeComponent();
             this.BindingContext = this;
         }
+
         private List<WorkAlarm> WorkAlarmData()
         {
             var WorkAlarmList = new List<WorkAlarm>();
@@ -43,6 +44,10 @@ namespace ForcusToDo
 
             return WorkAlarmList;
         }
-
+        class WorkAlarm
+        {
+            public string Sound { get; set; }
+        }
     }
+
 }

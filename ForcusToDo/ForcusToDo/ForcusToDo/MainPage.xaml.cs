@@ -61,6 +61,10 @@ namespace ForcusToDo
         {
             Navigation.PushAsync(new AddProjectPage());
         }
+        private void lstProject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Project selectedProject = (Project)e.SelectedItem;
+        }
     }
 
 }
